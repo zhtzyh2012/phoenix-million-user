@@ -6,11 +6,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = {UserApplication.class})
 public class UserApplicationTests {
 
-	@Test
-	public void contextLoads() {
-	}
+    @Test
+    public void contextLoads() {
+
+    }
 
 }
