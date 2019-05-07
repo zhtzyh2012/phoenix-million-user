@@ -32,13 +32,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- spring boot的核心依赖 -->
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.0.1</version>
-        </dependency>
-
         <!-- spring boot 热加载工具 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -46,12 +39,21 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- ORM和数据库依赖配置 -->
+        <!-- spring boot的mybatis核心依赖 -->
+        <!--<dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.0.1</version>
+        </dependency>-->
+
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
 
+        <!-- 减少不要的实体类属性添加和处理 -->
         <!-- 引入lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
