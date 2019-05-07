@@ -1,0 +1,13 @@
+笔记内容:
+-- 关于核心类以及注解的说明
+1.UserApplication类的@SpringBootApplication注解是spring boot的核心注解
+2.因为spring boot是jar包运行,所以UserApplication必须有main方法
+3.问题:spring boot项目中虽然配置redis依赖,但是不想让spring boot自动检测redis配置,如何处理呢?
+  答案1: @SpringBootApplication(exclude = {RedisAutoConfiguration.class, RedisRepositoriesAutoConfiguration.class})
+  答案2: 删除redis依赖配置
+
+-- 关于pom中配置说明
+1.当增加mybatis依赖后,那么就需要配置数据库的配置文件,所以如果此时不需要数据库配置,注释掉mybatis依赖.
+
+-- 关于servlet的说明
+1.resources目录下的static是servlet3.0新特性,将图片或者其他静态文件放在resources/static目录下可以直接访问.
