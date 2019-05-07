@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  */
 @Data
 @Component
-public class PropertyMng {
+public class Properties {
     /**
      * 手机号码
      */

@@ -13,11 +13,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class PropertyMngTests {
 
     @Autowired
-    private PropertyMng propertyMng;
+    private Properties properties;
 
     @Test
     public void testProperty() {
-        Long mobile = propertyMng.getMobile();
+        Long mobile = properties.getMobile();
         Assert.assertEquals(18710152801L, mobile.longValue());
     }
 
